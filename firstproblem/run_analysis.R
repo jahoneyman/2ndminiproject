@@ -27,7 +27,7 @@ names(dat) <- features$V2
 ## grep function will find names that have 'mean' or 'std' in the column names in 'features'
 ## dat_mean_std will store the result of 'dat[grep("mean|std",names(dat))]'
 
-dat_mean_std <- dat[grep("mean|std",names(dat))]
+dat_mean_std <- dat[grep("(mean\\(\\))|(std\\(\\))",names(dat))]
 
 # ==================================================
 
